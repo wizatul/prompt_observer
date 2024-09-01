@@ -1,0 +1,14 @@
+[[source]]
+url = "https://int.repositories.cloud.sap/artifactory/api/pypi/proxy-3rd-party-pypi/simple"
+trusted-host = "int.repositories.cloud.sap"
+verify_ssl = true
+name = "artifactory3rdparty"
+
+[[source]]
+url = "https://int.repositories.cloud.sap/artifactory/api/pypi/deploy-releases-pypi/simple"
+trusted-host = "int.repositories.cloud.sap"
+verify_ssl = true
+name = "artifactory"
+
+[packages]
+generative-ai-hub-sdk = {extras = ["langchain"], version = "==1.11.1", index = "artifactory"}
